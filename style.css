@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+    font-family: "Fira Sans", sans-serif; 
+    background-color: black;
+    color: white;
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.about{
+    font-size: 20px;
+    color: rgb(255, 132, 1) ;
+    margin-top: 80px;
+}
+
+.inabout{
+    font-weight: 150;
+    color: white;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(46, 44, 44) ;
+    margin-bottom: 40px;
+    color: rgb(29, 129, 191) ;
+    font-size: calc( 10px + 2vw);
+}
+#bimg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 55%;
+}
+.inner{
+    position: relative;
+    z-index: 10;
+}
+.container{
+    position: relative;
+    border:1px solid black; 
+}
+.container::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: ' ' ;
+    left:0 ; 
+    bottom:0 ; 
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 0.74) 5% , transparent );
+}
+
+.number{
+    margin: 20px 20px 20px 20px ;
+    display:flex ; 
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
+
+.button{
+    background-color: rgb(17, 78, 116) ;
+    color: white;
+    font-family: "Fira Sans", sans-serif; 
+    font-weight: bold ;
+    border-radius: 5px;
+    border: 0px ;
+    height: 25px;
+}
+.button:hover{
+    opacity: 80%;
+}
+
+#inputAT{
+    display: flex;
+    gap:10px ; 
+    flex-direction: column;
+}
+#inputBT{
+    display: flex;
+    gap:10px ; 
+    flex-direction: column;
+}
+#input{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap:20px ; 
+}
+#pno{
+    display: flex;
+    gap:10px ; 
+    flex-direction: column;
+}
+.input2{
+    background-color: rgb(0, 0, 0) ;
+    border: 2px solid rgb(46, 44, 44) ;
+    border-radius: 5px ;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.input2:hover{
+    background-color: rgb(46, 44, 44) ;
+}
+.processnumber{
+    height: 52px;
+    width: 52px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(46, 44, 44) ;
+}
+#container2{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px ; 
+}
+.box{
+    width: 52px;
+}
+#o1{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeInSlideUp {
+    to{
+        transform: translateY(0);
+        filter: blur(0) ;
+        opacity: 1;
+    }
+}
+#container3{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    height: 800px ;
+}
+.innercontainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.innercontainer.op{
+    transform: translateY(15px);
+    filter:blur(5px);
+    opacity: 0;
+    animation: fadeInSlideUp 0.5s 0.7s ease-in-out 1 forwards ;
+}
+.innermost{
+    display: flex ;
+    gap:10px ;
+    justify-content: center;
+    align-items: center;
+}
+.cl{
+    display: flex;
+    flex-direction: column;
+    gap:10px ; 
+}
+.obox{
+    border: 2px solid rgb(46, 44, 44) ;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#innerbutton{
+    position:absolute ; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left:3% ; 
+    top:40% ; 
+}
+.button2{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(46, 44, 44);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    opacity: 0;
+}
+.button2:hover{
+    background-color: rgb(170, 170, 170);
+    color: black;
+}
+
+.insidebox{
+    color:rgb(29, 129, 191) ;
+    font-weight: bolder;
+    border: none;
+    font-style: italic;
+}
+
+.algoheading{
+    font-family: "Rowdies", sans-serif;
+    font-weight:500 ;
+    font-style: italic;
+    font-size: 50px;
+    color: rgb(238, 244, 238) ;
+    margin-top: 50px;
+}
+.algodes{
+    font-style: italic;
+    font-weight: 100;
+    color: white;
+}
+#b2{
+    position: absolute;
+    top:100% ; 
+    margin-top: 10px;
+}
+
+#numberInput{
+    background-color: black ;
+    border: 0.5px solid rgb(46, 44, 44);
+    color: white;
+    height: 25px;
+    border-radius: 5px; 
+}
+#numberInput:hover{
+    background-color: rgb(46, 44, 44);
+}
+.op{
+    opacity: 100%;
+}
+.performance{
+    margin-top: 30px ;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #inputAT{
+        gap:5px ;
+    }
+    #inputBT{
+        gap:5px ; 
+    }
+    #input{
+        gap:10px ; 
+    }
+    #pno{
+        gap:5px ; 
+    }
+    .input2{
+        border: 1px solid rgb(46, 44, 44) ;
+        border-radius: 3px ;
+        height: 35px;
+        width: 35px;
+    }
+    .processnumber{
+        height: 37px;
+        width: 37px;
+        border: 1px solid rgb(46, 44, 44) ;
+    }
+    #container2{
+        margin-top: 20px;
+        gap:20px ; 
+    }
+    .box{
+        width: 35px;
+    }
+
+    .innermost{
+        gap:5px ;
+    }
+    .cl{
+        gap:5px ; 
+    }
+    .obox{
+        border: 1px solid rgb(46, 44, 44) ;
+        height: 30px;
+        width: 30px;
+        border-radius: 3px;
+    }
+    
+    #innerbutton{
+        gap: 10px;
+        left:1px ; 
+        top:25% ; 
+        margin-left: 0px;
+    }
+    .button2{
+        height: 30px;
+        width: 30px;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+    .button2:hover{
+        background-color: rgb(170, 170, 170);
+        color: black;
+    }
+    
+    .insidebox{
+        color:rgb(29, 129, 191) ;
+        font-weight: bolder;
+        border: none;
+        font-style: italic;
+        font-size:small;
+    }
+
+    .performance{
+        font-size: 13px ;
+    }
+    
+}
+
